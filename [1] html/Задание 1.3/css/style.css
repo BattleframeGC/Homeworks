@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background: #ddd url(../images/bg.jpg) repeat fixed;
+}
+
+.container {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.menu {
+    margin: 0; 
+    padding: 10px;
+    background: linear-gradient(rgb(125, 179, 224), steelblue);
+}
+
+.menu > li {
+    list-style-type: none;
+    display: inline; 
+    margin-right: 5px;
+    padding: 6px; 
+}
+
+.nav_link a{
+    text-decoration: none;
+    color: #fff
+}
+
+.nav_link a:hover {
+    color: orange
+}
+
+.menu  ul {
+    display: none;
+}
+
+.post img{
+    display: block;
+    padding: 4px; 
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border: 1px solid #999; 
+    border-radius: 5px;
+    width:500px;
+    height:auto;
+}
+
+.item{
+    display: block;
+    padding:20px 25px 20px 25px;
+    text-align: left;
+}
+
+.post .title{
+    display: block;
+    text-align: center;
+}
+
+.post a {
+    background: linear-gradient(rgb(125, 179, 224), steelblue);
+    border: 1px solid #303030; 
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.post a:hover {
+    background: linear-gradient(rgb(230, 244, 255), rgb(138, 156, 172));
+    color: #303030;
+}
+
+.pagination {
+    text-align: center;
+}
+.pagination a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgb(125, 179, 224), steelblue);
+    border: 1px solid #303030; 
+    padding: 16px;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background: linear-gradient(rgb(230, 244, 255), rgb(138, 156, 172));
+    color: #303030;
+}

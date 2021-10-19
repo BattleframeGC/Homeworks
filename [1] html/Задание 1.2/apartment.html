@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <title>Подбор квартиры</title>
+   </head>
+   <body>
+      <form action="#" method="post">
+         <table>
+            <tr>
+               <td><label for="district">Район: </label></td>
+               <td>
+                  <select id="district">
+                     <option value="admiraltejskij">Адмиралтейский</option>
+                     <option value="vasileostrovskij">Василеостровский</option>
+                     <option value="vyborgskij">Выборгский</option>
+                     <option value="kalininskij">Калининский</option>
+                     <option value="kirovskij">Кировский</option>
+                     <option value="kolpinskij">Колпинский</option>
+                     <option value="krasnogvardejskij">Красногвардейский</option>
+                     <option value="krasnosel'skij">Красносельский</option>
+                     <option value="kronshtadtskij">Кронштадтский</option>
+                     <option value="kurortnyj">Курортный</option>
+                     <option value="moskovskij">Московский</option>
+                     <option value="nevskij">Невский</option>
+                     <option value="petrogradskij">Петроградский</option>
+                     <option value="petrodvorcovyj">Петродворцовый</option>
+                     <option value="primorskij">Приморский</option>
+                     <option value="pushkinskij">Пушкинский</option>
+                     <option value="frunzenskij">Фрунзенский</option>
+                     <option value="centralnyj">Центральный</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td><label for="rooms">Количество комнат: </label></td>
+               <td>
+                  <select id="rooms">
+                     <option value="rm_st">Студия</option>
+                     <option value="rm_1">1-комнатная</option>
+                     <option value="rm_2" selected>2-комнатная</option>
+                     <option value="rm_3">3-комнатная</option>
+                     <option value="rm_4">4-комнатная</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td><label for="year">Год сдачи: </label></td>
+               <td> 
+                  <input type="range" id="year" name="year" min="2014" max="2021" value="2018" oninput="year_out.value = year.value">
+                  <output id="year_out">2018</output>
+               </td>
+            </tr>
+            <tr>
+               <td><label for="cost">Макс.цена: </label></td>
+               <td><input id="cost" type="number" placeholder="до 3.000.000" name="cost" max="3000000" step="100000"></td>
+            </tr>
+            <tr>
+               <td><label for="area">Площадь кв/м: </label></td>
+               <td> 
+                  <input type="range" id="area" name="area" min="10" max="100" value="43" oninput="size_out.value = area.value">
+                  <output id="size_out">43</output>
+               </td>
+            </tr>
+            <tr>
+               <td>Отделка:</td>
+               <td>
+                  <div>
+                     <label>
+                     <input type="radio" checked name="finish" value="yes">
+                     с отделкой
+                     </label>
+                  </div>
+                  <div>
+                     <label>
+                     <input type="radio" name="finish" value="no">
+                     без отделки
+                     </label>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td><label for="terassa">Терасса: </label></td>
+               <td>
+                  <select id="terassa">
+                     <option value="est">Есть</option>
+                     <option value="net">Нет</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td>Класс:</td>
+               <td>
+                  <div>
+                     <label>
+                     <input type="checkbox" name="class[]" value="business">
+                     Бизнес-класс
+                     </label>
+                  </div>
+                  <div>
+                     <label>
+                     <input type="checkbox" name="class[]" value="premium">
+                     Премиум
+                     </label>
+                  </div>
+                  <div>
+                     <label>
+                     <input type="checkbox" name="class[]" value="deluxe">
+                     Deluxe
+                     </label>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td><label for="terassa">Этаж: </label></td>
+               <td>
+                  <div>
+                     <input id="floor_min" type="number" placeholder="1" name="floor_min" min="1" max="9">
+                     — 
+                     <input id="floor_max" type="number" placeholder="9" name="floor_max" min="2" max="9">
+                  </div>
+                  <div>
+                     <label>
+                     <input type="checkbox" value="no1">
+                     Не первый
+                     </label>
+                     <label>
+                     <input type="checkbox" value="nolast">
+                     Не последний
+                     </label>
+                  </div>
+               </td>
+            </tr>
+            </div>
+         </table>
+      </form>
+   </body>
+</html>
+
