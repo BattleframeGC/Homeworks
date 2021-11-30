@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js. Домашнее задание 1</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/flex-grid.css">
+</head>
+<body>    
+
+  <section id="app">
+    <div class="container col-12">
+          <aticle class="col-3 post" v-for="cat in cats">
+             <h2>{{cat.name}}</h2>
+             <img v-bind:src="cat.img">
+             <p>Окрас: {{cat.color}}</p>
+             <p>Возраст: {{cat.age}}</p>
+             <a href="#">Подробнее</a>
+          </aticle>
+    </div>
+ </section>
+ 
+</body>
+<footer>
+    <script src="js/animals.js"></script>
+</footer>
+</html>
