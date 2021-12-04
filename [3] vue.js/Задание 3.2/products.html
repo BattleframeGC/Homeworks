@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js. Домашнее задание 1</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex-grid.css">
+</head>
+<body>    
+  
+  <section id="app">
+    <table>
+      <thead>
+        <th>Товар</th>
+        <th>Стоимость</th>
+      </thead>
+      <tbody>
+        <tr v-for="good in sortedByCount" 
+        :class="[
+        good.count === 0
+          ? 'zero'
+            : good.count <= 20
+              ? 'not-many'
+              : 'many'
+              ]">
+          <td>{{good.title}}</td>
+          <td>{{good.price}}</td>
+          <!-- <td>{{good.count}}</td> -->
+        </tr>
+      </tbody>
+    </table>
+ </section>
+ 
+</body>
+<footer>
+    <script src="js/products.js"></script>
+</footer>
+</html>
