@@ -11,13 +11,13 @@
 
   <section id="app">
     <div class="container col-12">
-          <aticle class="col-3 post" v-for="cat in cats">
+          <article class="col-3 post" v-for="cat in cats">
              <h2>{{cat.name}}</h2>
              <img v-bind:src="cat.img">
              <p>Окрас: {{cat.color}}</p>
              <p>Возраст: {{cat.age}}</p>
              <a href="#">Подробнее</a>
-          </aticle>
+          </article>
     </div>
  </section>
  
