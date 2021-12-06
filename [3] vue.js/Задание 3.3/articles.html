@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <title>Vue.js. Домашнее задание 1</title>
+      <script src="https://unpkg.com/vue@next"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/flex-grid.css">
+   </head>
+   <body>
+      <section id="app">
+         <input type="text" v-model="searchRequare" placeholder="Введите название статьи для поиска">
+         <div class="container col-12">
+            <article v-for="article in searchResults" class="list-style col-12">
+               <img :src="article.image" :alt="article.title">
+               <p>{{article.title}}</p>
+            </article>
+         </div>
+      </section>
+   </body>
+   <footer>
+      <script src="js/articles.js"></script>
+   </footer>
+</html>
+

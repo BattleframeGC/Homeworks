@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <title>Vue.js. Домашнее задание 3.2</title>
+      <script src="https://unpkg.com/vue@next"></script>
+      <link rel="stylesheet" href="css/flex-grid.css">
+   </head>
+   <body>
+      <section id="app">
+         <div v-for="(service, index) in servicesByCost">
+            <input type="checkbox" :id="index" :value="index" v-model="selectedServices">
+            <label :for="index">{{ service.title }} ({{ service.price }})</label>
+         </div>
+         <p>Окончательная стоимость: {{ servicesSumm }}</p>
+      </section>
+   </body>
+   <footer>
+      <script src="js/services.js"></script>
+   </footer>
+</html>

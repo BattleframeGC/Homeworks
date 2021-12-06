@@ -1,0 +1,63 @@
+body {
+    background: #ddd url(../images/bg.jpg) repeat fixed;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 1rem;
+	gap: 1rem;
+}
+
+.list-style {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.list-style > img {
+    display: inline-block;
+    padding: 4px; 
+    background: #fff;
+    border: 1px solid #999; 
+    width: 120px;
+    border-radius: 50%;
+}
+
+.list-style > p {
+    position: absolute;
+    top:30%;
+    left:140px;
+    background: #fff;
+    border: 1px solid #999; 
+    border-radius: 5px;
+    padding: 4px; 
+}
+
+ a {
+    background: linear-gradient(rgb(125, 179, 224), steelblue);
+    border: 1px solid #303030; 
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 15px ;
+    margin: 15px 15px 15px 15px;
+    display: inline-block;
+    width: 512px;
+}
+
+ a:hover {
+    background: linear-gradient(rgb(230, 244, 255), rgb(138, 156, 172));
+    color: #303030;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 14px;
+  }
