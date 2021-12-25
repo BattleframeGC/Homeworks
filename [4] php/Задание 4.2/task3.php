@@ -6,4 +6,4 @@
 		 return 1;
     }
 
-print_r(auth("qwe","123"));
+print_r(auth("qwe","123")); 

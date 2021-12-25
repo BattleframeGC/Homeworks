@@ -28,7 +28,7 @@ function get_all_tasks(){
     ];
 }
 
-
+ 
 function filter(array $get_all_tasks, $requirement)
 {
     foreach($get_all_tasks as $task)
