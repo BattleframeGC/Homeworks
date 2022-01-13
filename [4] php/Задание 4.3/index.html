@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Музыкальный инструменты</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/flex-grid.css">
+</head>
+<body>  
+    <header>
+       <h1>Музыкальный инструменты</h1>
+       <nav>
+          <a href="#" class="js-open-modal" data-modal="auth">Личный кабинет</a>
+      
+       </nav>
+    </header>
+    <main>
+        <section class="items-section">
+            <div class="container col-12">
+                <div class="items"></div>
+            </div>
+        </section>
+
+
+        <div class="modal" data-modal="info">
+            <svg class="modal__cross js-modal-close" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <p class="modal__title"></p>
+            <div class="modal__info"></div>
+        </div>
+
+        <div class="modal" data-modal="auth" id="auth-modal">
+            <svg class="modal__cross js-modal-close" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <p class="modal__title">АВТОРИЗАЦИЯ</p>
+            <div class="modal__info">
+                <form name="auth" method="post">
+                    <p><input placeholder="Логин" name="login" id="login" type="text" required></p>
+                    <p><input placeholder="Пароль" name="password" id="password" type="password" required></p>
+                    <p><input type="submit" value="Авторизация"></p>
+                </form>
+            </div>
+            <p id="error"></p>
+        </div>
+
+
+
+        <div class="overlay js-overlay-modal"></div>
+    </main>  
+</body>
+<footer>
+    <script src="/js/style.js"></script>
+</footer>
+</html>
