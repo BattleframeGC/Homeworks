@@ -2,7 +2,7 @@
 
 function modalsInit()
 {
-    var modalButtons = document.querySelectorAll('.js-open-modal'),
+    let modalButtons = document.querySelectorAll('.js-open-modal'),
         overlay      = document.querySelector('.js-overlay-modal'),
         closeButtons = document.querySelectorAll('.js-modal-close');
  
@@ -11,7 +11,7 @@ function modalsInit()
        item.addEventListener('click', function(e) {
  
           e.preventDefault();
-          var modalId = this.getAttribute('data-modal'),
+          let modalId = this.getAttribute('data-modal'),
           modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
           modalElem.classList.add('active');
           overlay.classList.add('active');
@@ -22,7 +22,7 @@ function modalsInit()
     closeButtons.forEach(function(item){
  
        item.addEventListener('click', function(e) {
-          var parentModal = this.closest('.modal');
+          let parentModal = this.closest('.modal');
  
           parentModal.classList.remove('active');
           overlay.classList.remove('active');
