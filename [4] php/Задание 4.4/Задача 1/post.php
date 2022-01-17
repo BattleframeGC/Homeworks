@@ -4,6 +4,10 @@ $filesArr = $_FILES;
 
 $files_dir = 'files/';
 
+if (!file_exists($files_dir)) {
+    mkdir($files_dir, 0777, true);
+}
+
 function RemapArray($name, $type, $tmp_name, $error, $size)
 {
     return array(
