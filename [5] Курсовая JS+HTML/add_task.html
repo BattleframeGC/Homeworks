@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="utf-8">
+   <title>Добавление задачи</title>
+   <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Добавление задачи</h2>
+    <form name="mainForm">
+      <ul class="flex-outer">
+        <li>
+          <label for="task-name">Название задачи</label>
+          <input type="text" id="task-name" name="task-name" placeholder="Введите название задачи. 1-20 символов" required minlength="1" maxlength="20">
+          <span class="notify-error"></span>
+        </li>
+        <li>
+          <label for="task-description">Описание задачи</label>
+          <textarea rows="6" id="task-description" name="task-description" required placeholder="Введите описание задачи. Минимум 100 символов"></textarea>
+        </li>
+        <li>
+          <label for="task-special">Особые пожелания</label>
+          <input type="text" id="task-special" name="task-special" placeholder="Введите особые пожелания к исполнению" minlength="1" maxlength="60">
+          <span class="notify-error"></span>
+        </li>
+        <li>
+          <label for="task-prioritet">Приоритет</label>
+            <select name="task-prioritet">
+            <option selected value="1">Обычный</option>
+            <option value="2">Высокий</option>
+           </select>
+        </li>
+        <li>
+          <label for="task-term">Срок выполнения</label>
+          <input id="task-term" type="datetime-local" name="task-term" required>
+          <span class="notify-error"></span>
+        </li>
+        <li>
+         <span class="notify"></span>
+        </li>
+        <li>
+          <button type="submit" name="submit">Добавить задачу</button>
+        </li>
+        <li>
+          <button type="button" id="tasklist" class="tasklist">Списк задач</button>
+        </li>
+      </ul>
+    </form>
+    <p class="message"></p>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
+  
+  
