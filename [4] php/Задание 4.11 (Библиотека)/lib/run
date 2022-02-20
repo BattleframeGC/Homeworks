@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+require_once 'handler.php';
+$cmdlist = require_once 'commands.php';
+$cmdHandler = new Executor($cmdlist);
+
+if (count($argv)<1) exit('Введите команду!');
+if (count($argv)<2) exit('Отсутствуют аргументы команды!');
+
+$cmdHandler->executeCmd($argv);
